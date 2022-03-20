@@ -5,6 +5,7 @@ import {Home} from "./pages/Home";
 import {About} from "./pages/About";
 import {Contact} from "./pages/Contact";
 import {NotFound} from "./pages/NotFound";
+import {Category} from "./pages/Category";
 
 function App() {
     return (
@@ -27,7 +28,10 @@ function App() {
                             path="/contacts"
                             component={Contact}
                         />
-                        <Route  />
+                        <Route
+                            path="/category/:name"
+                            component={Category}
+                        />
                         <Route component={NotFound}/>
                     </Switch>
 
